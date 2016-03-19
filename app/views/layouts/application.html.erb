@@ -1,5 +1,24 @@
 <!DOCTYPE html>
 <html>
+<<<<<<< HEAD
+	<head>
+	  <title>Lesson09HomeworkAllCrudActionsAndHandlingErrors</title>
+	  <%#= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+	  <%#= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	  <%= csrf_meta_tags %>
+</head>
+	<body>
+
+		<% flash.each do |name, msg| %>
+			<div class="<%= name %>">
+				<%= msg %>
+			</div>
+		<% end %>
+
+	<%= yield %>
+
+	</body>
+=======
 <head>
   <title>Lesson07HomeworkCreatingArticles</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
@@ -11,4 +30,5 @@
 <%= yield %>
 
 </body>
+>>>>>>> origin/master
 </html>
